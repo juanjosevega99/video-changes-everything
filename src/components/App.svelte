@@ -1,9 +1,10 @@
 <script>
-  
+  let dateNow = new Date().getTime();
+  let dateEnd = new Date('2020-05-25').getTime();
 </script>
 
 <style>
-  /* import  */
+  /* @import url(''); */
   :global(*) {
     box-sizing: border-box;
   }
