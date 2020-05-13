@@ -1,16 +1,19 @@
 <script>
   let dateNow = new Date().getTime();
   let dateEnd = new Date('2020-05-25').getTime();
+  let diff =  dateEnd - dateNow;
+  let date = Math.round(diff/(1000*60*60*24));
 </script>
 
 <style>
-  /* @import url(''); */
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
   :global(*) {
-    box-sizing: border-box;
+    box-sizing: border-box
   }
   :global(body, div) {
+    font-family: 'Pacifico', cursive;
     margin: 0;
-    padding: 0;
+    padding-top: 90px;
   }
   #myVideo {
     position: fixed;
@@ -22,14 +25,14 @@
   .App {
     position: absolute;
     bottom: 0;
-    top: 0;
+    top:0;
     color: #f1f1f1;
     width: 100%;
-    background: rgba(red, green, blue, alpha);
+    background: rgba(118, 64, 139, 0.6)
   }
   .App-container {
     display: grid;
-    grid-template-columns: minmax(auto, 1280px);
+    grid-template-columns: minmax(auto,1280px);
     justify-content: center;
     align-items: center;
   }
@@ -50,33 +53,41 @@
 
   h1 {
     color: white;
-    font-size: 50px;
+    font-size: 45px;
     margin: 0;
     padding: 0;
     letter-spacing: 2px;
-    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2)
   }
-
   p {
-
-  }
-
-  figure {
+    font-size: 40px;
     margin: 0;
     padding: 0;
+    letter-spacing: 1.2px;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+  }
+  figure {
+    margin: 0;
+    padding:0;
+    text-align: right;
   }
 </style>
 
 <video autoplay muted loop id="myVideo">
-  <source src="https://instagram.fnva1-1.fna.fbcdn.net/v/t51.2885-15/e35/72661532_162861384957817_6944310968540763528_n.jpg?_nc_ht=instagram.fnva1-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=uqrHvmvUHsgAX97roAx&oh=a42ca2d88c91c3d5ea886a92567d51b4&oe=5EBE5E81" type="video/mp4">
+  <source src="https://instagram.fnva1-1.fna.fbcdn.net/v/t50.2886-16/79791435_579264762876155_2111269559389555774_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5mZWVkIn0&_nc_ht=instagram.fnva1-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=4iTcAaU7iFQAX8p1kZ0&vs=17868557554554223_4227504090&_nc_vs=HBksFQAYJEdFdUZ3UVQ3RUd5VzFnNENBRDZNZ25CNnZFd2Ria1lMQUFBRhUAAsgBABUAGCRHTS1YeUFTTVNIeEIzOGtCQU9jZU5JSXRCejQ5YmtZTEFBQUYVAgLIAQAoABgAGwGIB3VzZV9vaWwBMBUAABgAFt6Kr%2Br31r0%2FFQIoAkMzLBdAI7tkWhysCBgSZGFzaF9iYXNlbGluZV8xX3YxEQB16gcA&_nc_rid=12368ac43d&oe=5EBE76FD&oh=3536eeda47b463cccd00d3a51dc5ae6e" type="video/mp4">
 </video>
 
 <div class="App">
   <div class="App-container">
     <div class="App-content">
       <div class="App-title">
-        <h1>xd</h1>
-        <p>days</p>
+        <h1>The video that changes everything</h1>
+        <p>Days to end quarantine: {date}</p>
+      </div>
+      <div class="App-image">
+        <figure>
+          <img src="https://cdn130.picsart.com/290937723004211.png" alt="">
+        </figure>
       </div>
     </div>
   </div>
