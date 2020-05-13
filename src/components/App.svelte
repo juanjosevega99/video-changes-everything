@@ -1,7 +1,9 @@
 <script>
+  
 </script>
 
 <style>
+  /* import  */
   :global(*) {
     box-sizing: border-box;
   }
@@ -54,6 +56,14 @@
     text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
   }
 
+  p {
+
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
 </style>
 
 <video autoplay muted loop id="myVideo">
